@@ -18,16 +18,9 @@ const App = () => {
       .then(data => {
         setPersons(data)
       })
-  }, [])
+  }, [persons])
   
-  useEffect(() => {
-    Services
-      .getAll()
-      .then(data => {
-        setPersons(data)
-      })
-  }, [])
-  
+
   const generateId = () => {
     const maxId = persons.length > 0
       ? Math.max(...persons.map(n => Number(n.id)))

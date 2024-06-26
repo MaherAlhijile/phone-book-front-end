@@ -1,0 +1,26 @@
+1- Main app components are jsx files for modularity 
+2- dynamic values (that change on user screen) are achived by using (useState) hook
+3- doing something on each render on inital render is achived by using (useEffect) hook
+4- http requests library such as axios is used to comunicate with back-end (send values, get values, update and delete values from backend) (at this point there is no database)
+
+5- make back-end with a middleware such as express to handle requests and responses to update values, use another middleware (cors) to make comunication possible 
+6- don't forget to lisetn to a port so front-end can comunicate with back-end
+7- deploy back-end and make front end send and recive data from its url, at this time still no database
+8- use npm run build on front end to make a A production build 
+9- copy production build to back-end dir and refactor
+10- study what app.use(express.static('dist')) again
+
+11- now its time for a database, first chose what kind of database to use
+12- make .env file and a .gitignore so we can ignore sensitve info when pushing to github
+13- make a dir for database connection 
+14- refactor code to use with database
+15- handle common errors
+16- Moving error handling into middleware
+
+
+things to study:
+    unknownEndpoint
+    requestLogger
+    middlewares
+    routes
+    
